@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="libraryRootAnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mich.gwan.librarymanagementsystem.Controller.Book.MainWindowController">
+   <children>
+      <MenuBar fx:id="userMainWindowMenuBar" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#closeMainWindow" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuView" mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem fx:id="menuItemBookInfo" mnemonicParsing="false" onAction="#showBookInformationWindow" text="Book Info" />
+                  <MenuItem fx:id="studentInfoMenuItem" mnemonicParsing="false" onAction="#showStudentInformationWindow" text="Student Info" />
+                  <MenuItem fx:id="userInformationMenuItem" mnemonicParsing="false" onAction="#showUserInformationWindow" text="User Info" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="showInfoAboutDeveloperMenuItem" mnemonicParsing="false" onAction="#showInformationAboutDeveloper" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutX="14.0" layoutY="36.0" prefHeight="110.0" prefWidth="1190.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="36.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="110.0" prefWidth="1179.0" spacing="50.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+         </children></Pane>
+      <VBox fx:id="buttonsVBox" alignment="CENTER" layoutX="10.0" layoutY="191.0" prefHeight="473.0" prefWidth="294.0" spacing="20.0" style="-fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <Button fx:id="studentButton" mnemonicParsing="false" onAction="#showStudentsWindow" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="MEMBERS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="booksButton" mnemonicParsing="false" onAction="#showBooksWindow" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="BOOKS">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="usersButton" mnemonicParsing="false" onAction="#showLibraryUsersWindow" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="USERS">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="settingsButton" mnemonicParsing="false" onAction="#showSttingsWindow" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="SETTINGS">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="20.0" layoutY="220.0" mnemonicParsing="false" onAction="#exitLibraryWindow" prefHeight="50.0" prefWidth="200.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px;" text="EXIT">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="studentInformationRootAnchorPane" prefHeight="580.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mich.gwan.librarymanagementsystem.Controller.Member.MemberInformationController">
+   <children>
+      <TextField fx:id="studentInformationTextFiel" layoutX="59.0" layoutY="63.0" onAction="#showStudentInformation" prefHeight="25.0" prefWidth="355.0" promptText="Serch Book" />
+      <ListView fx:id="studentInfoListView" layoutX="60.0" layoutY="108.0" prefHeight="419.0" prefWidth="349.0" />
+      <Label alignment="CENTER" layoutX="155.0" layoutY="8.0" prefHeight="25.0" prefWidth="510.0" text="STUDENT INFORMATION;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

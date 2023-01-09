@@ -1,0 +1,112 @@
+
+.text-field:focused {
+
+}
+/* top, right, bottom, left*/
+.text-field {
+  -fx-border-color: grey;
+  -fx-border width: 0 0 1 0;
+  -fx-background-color: transparent;
+   -fx-background-radius: 5;
+   -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-font-family: "Times New Roman";
+      -fx-font-size: 18;
+      -fx-padding: 1,1,1,1;
+      -fx-border-width: 1;
+      -fx-border-radius: 5;
+      -fx-border: gone;
+      -fx-border-style:solid;
+
+}
+.label{
+ -fx-font-family: "Times New Roman";
+      -fx-font-size: 15;
+      -fx-text-fill:grey;
+}
+.button{
+-fx-background-color:transparent;
+-fx-background-radius:5px;
+-fx-border-radius:5px;
+-fx-text-fill:grey;
+-fx-border-color:grey;
+}
+.button:hover{
+-fx-background-color:blue;
+-fx-text-fill:white;
+-fx-border-color:white;
+-fx-background-radius:3px;
+-fx-border-radius:3px;
+}
+.gridPane{
+}
+.combo-box .list-cell {
+        -fx-background-color: grey;
+}
+
+/* The TextField that shows the selected item in an editable ComboBox */
+.combo-box .text-input {
+        -fx-background-color: #e7e7e7;
+}
+
+/* Style the arrow button area */
+.combo-box .arrow-button {
+        -fx-background-color: lightgray;
+}
+
+/* Set  the text color in the popup list for ComboBox to blue */
+.combo-box-popup .list-view .list-cell {
+        -fx-text-fill: blue;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: tan;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: lightgray;
+}
+ .list-view .list-cell:odd {
+    -fx-background-color: -fx-control-inner-background;
+}
+.list-view .text-field-list-cell .text-field {
+        -fx-background-color: yellow;
+}
+.date-picker-popup > * > .today {
+        -fx-font-weight: bolder;
+}
+
+/* Display all day numbers in blue */
+.date-picker-popup > * > .day-cell {
+    -fx-text-fill: blue;
+}
+
+/* Set the font for the cells */
+.table-row-cell {
+        -fx-font-size: 10pt;
+        -fx-font-family: Arial;
+}
+
+/* Set the font size and text color for column headers */
+.table-view .column-header .label{
+        -fx-font-size: 10pt;
+        -fx-text-fill: blue;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-row-cell .table-cell {
+        -fx-border-width: 0.25px;
+        -fx-border-color: transparent gray gray transparent;
+}
+
+/* Make the text in the placeholder red and bold */
+.table-view .placeholder .label {
+        -fx-text-fill: red;
+        -fx-font-weight: bold;
+}
+ /* Set the filler background to white*/
+.table-view .column-header-background .filler {
+        -fx-background-color: white;
+}
